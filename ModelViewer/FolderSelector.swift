@@ -2,6 +2,8 @@ import SwiftUI
 
 struct FolderSelector: View {
     
+    var completion:((URL?)->(Void))?
+    
     @Binding
     var inputFolder:URL?
     var caption: String
@@ -9,6 +11,7 @@ struct FolderSelector: View {
     var body: some View {
         Button(caption) {
             self.selectFolder()
+            
         }
     }
     
@@ -31,6 +34,7 @@ struct FolderSelector: View {
                 let pickedFolders = folderPicker.urls
                 print (pickedFolders)
                 inputFolder = pickedFolders.first!
+                completion?(inputFolder)
 //                self.selectedFolder.getFileList(at: pickedFolders)
             }
         }

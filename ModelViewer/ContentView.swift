@@ -35,7 +35,7 @@ struct ContentView: View {
                     converter.run(inputFolderPath: inputFolder!)
                 }.disabled(inputFolder==nil)
                 Spacer()
-                FolderSelector(inputFolder: $loadedModel ,caption: "Load existing model", canChooseDirectories: false)
+                FolderSelector(completion: { url in converter.computedModelURL = url }, inputFolder: $loadedModel, caption: "Load existing model", canChooseDirectories: false)
             }
             HStack {
                 ProgressView(value: converter.progress)
