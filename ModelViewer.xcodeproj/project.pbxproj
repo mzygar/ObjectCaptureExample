@@ -103,15 +103,15 @@
 		6E4BC2C0294A03770071D910 /* ModelViewer */ = {
 			isa = PBXGroup;
 			children = (
+				6E4BC2F0294A07800071D910 /* Photogrammetry.swift */,
 				6E4BC2C1294A03770071D910 /* ModelViewerApp.swift */,
 				6E4BC2C3294A03770071D910 /* ContentView.swift */,
+				6E4BC2EC294A038C0071D910 /* FolderSelector.swift */,
 				6E4BC2C5294A03780071D910 /* Assets.xcassets */,
 				6E4BC2F2294A0F380071D910 /* kostka3d.usdz */,
 				6E4BC2CA294A03780071D910 /* ModelViewer.entitlements */,
 				6E4BC2EE294A05420071D910 /* island.usda */,
 				6E4BC2C7294A03780071D910 /* Preview Content */,
-				6E4BC2EC294A038C0071D910 /* FolderSelector.swift */,
-				6E4BC2F0294A07800071D910 /* Photogrammetry.swift */,
 			);
 			path = ModelViewer;
 			sourceTree = "<group>";

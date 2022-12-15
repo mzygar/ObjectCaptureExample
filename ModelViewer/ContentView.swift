@@ -36,12 +36,12 @@ struct ContentView: View {
                 FolderSelector(inputFolder: $inputFolder,caption: "Choose image folder", canChooseDirectories: true)
                 Button("Create model") {
                     converter.run(inputFolderPath: inputFolder!)
-                }.disabled(inputFolder==nil)
+                }.disabled(inputFolder==nil || converter.isRunning)
                 Spacer()
-                FolderSelector(completion: { url in
+                FolderSelector(inputFolder: $inputFolder, caption: "Load existing model", canChooseDirectories: false, completion: { url in
                     converter.computedModelURL = url
                     inputFolder = nil
-                }, inputFolder: $inputFolder, caption: "Load existing model", canChooseDirectories: false)
+                })
             }
             HStack {
                 ProgressView(value: converter.progress)

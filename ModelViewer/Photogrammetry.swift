@@ -8,6 +8,7 @@
 import Foundation
 import os
 import RealityKit
+import AppKit
 
 private let logger = Logger(subsystem: "com.mzygar.modelviewer",
                             category: "Model viewer")
@@ -22,12 +23,14 @@ class Photogrammetry: ObservableObject {
     @Published
     var progress: Double = 0.0
     
-
+    @Published
+    var isRunning: Bool = false
+    
+    var outputFilenameURL:URL!
     
     func run(inputFolderPath:URL) {
-//    guard let inputFolder = inputFolder else { return }
         let inputFolderUrl = inputFolderPath
-        outputFilename = inputFolderPath.lastPathComponent + ".usdz"
+        outputFilenameURL = showSavePanel()
         let configuration = makeConfigurationFromArguments()
         logger.log("Using configuration: \(String(describing: configuration))")
 
@@ -80,25 +83,38 @@ class Photogrammetry: ObservableObject {
             }
     }
 
+        isRunning = true
     // The compiler may deinitialize these objects since they may appear to be
-    // unused. This keeps them from being deallocated until they exit.
-    withExtendedLifetime((session, waiter)) {
-        // Run the main process call on the request, then enter the main run
-        // loop until you get the published completion event or error.
-        do {
-            let request = makeRequestFromArguments()
-            logger.log("Using request: \(String(describing: request))")
-            try session.process(requests: [ request ])
-            // Enter the infinite loop dispatcher used to process asynchronous
-            // blocks on the main queue. You explicitly exit above to stop the loop.
-//            RunLoop.main.run()
-        } catch {
-            logger.critical("Process got error: \(String(describing: error))")
-//            Foundation.exit(1)
+        // unused. This keeps them from being deallocated until they exit.
+        withExtendedLifetime((session, waiter)) {
+            // Run the main process call on the request, then enter the main run
+            // loop until you get the published completion event or error.
+            do {
+                let request = makeRequestFromArguments()
+                logger.log("Using request: \(String(describing: request))")
+                try session.process(requests: [ request ])
+            } catch {
+                logger.critical("Process got error: \(String(describing: error))")
+    //            Foundation.exit(1)
+            }
         }
     }
-}
 
+    
+    func showSavePanel() -> URL? {
+            let savePanel = NSSavePanel()
+            savePanel.allowedContentTypes = [.usdz]
+            savePanel.canCreateDirectories = true
+            savePanel.isExtensionHidden = false
+            savePanel.title = "Save your model"
+            savePanel.message = "Choose a folder and a name to store the image."
+            savePanel.nameFieldLabel = "Image file name:"
+
+            let response = savePanel.runModal()
+            return response == .OK ? savePanel.url : nil
+        }
+    
+    
 /// Creates the session configuration by overriding any defaults with arguments specified.
     private func makeConfigurationFromArguments() -> PhotogrammetrySession.Configuration {
         var configuration = PhotogrammetrySession.Configuration()
@@ -110,7 +126,7 @@ class Photogrammetry: ObservableObject {
     /// Creates a request to use based on the command-line arguments.
     private func makeRequestFromArguments() -> PhotogrammetrySession.Request {
         let outputUrl = URL(fileURLWithPath: outputFilename!)
-        return PhotogrammetrySession.Request.modelFile(url: outputUrl)
+        return PhotogrammetrySession.Request.modelFile(url: outputFilenameURL)
     }
 
     /// Called when the the session sends a request completed message.
@@ -122,9 +138,13 @@ class Photogrammetry: ObservableObject {
             logger.log("\tmodelFile available at url=\(url)")
             DispatchQueue.main.async{
                 self.computedModelURL = url
+                self.isRunning = false
             }
         default:
             logger.warning("\tUnexpected result: \(String(describing: result))")
+            DispatchQueue.main.async {
+                self.isRunning = false
+            }
         }
     }
 
@@ -194,18 +214,4 @@ extension PhotogrammetrySession.Configuration.FeatureSensitivity {
         }
     }
 }
-
-// MARK: - Main
-
-//// Run the program until completion.
-//if #available(macOS 12.0, *) {
-//Photogrammetry.main()
-//} else {
-//fatalError("Requires minimum macOS 12.0!")
-//}
-//
-//
-//
-//
-
 

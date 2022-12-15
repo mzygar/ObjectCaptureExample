@@ -2,21 +2,21 @@ import SwiftUI
 
 struct FolderSelector: View {
     
-    var completion:((URL?)->(Void))?
-    
     @Binding
     var inputFolder:URL?
+    
     var caption: String
     var canChooseDirectories: Bool
+    
+    var completion:((URL?)->(Void))?
+    
     var body: some View {
         Button(caption) {
             self.selectFolder()
-            
         }
     }
     
     func selectFolder() {
-        
         let folderChooserPoint = CGPoint(x: 0, y: 0)
         let folderChooserSize = CGSize(width: 500, height: 600)
         let folderChooserRectangle = CGRect(origin: folderChooserPoint, size: folderChooserSize)
@@ -35,7 +35,6 @@ struct FolderSelector: View {
                 print (pickedFolders)
                 inputFolder = pickedFolders.first!
                 completion?(inputFolder)
-//                self.selectedFolder.getFileList(at: pickedFolders)
             }
         }
     }
