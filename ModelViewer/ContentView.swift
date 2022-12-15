@@ -15,27 +15,33 @@ struct ContentView: View {
     var inputFolder: URL?
     @State
     var existingModel: URL?
-    
-    @State
-    var loadedModel:URL? {
-        didSet {
-            converter.computedModelURL = loadedModel
+    var title: String {
+        if let photos = inputFolder?.lastPathComponent {
+            return "Loaded photos from " + photos
         }
+        
+        if let model = converter.computedModelURL?.lastPathComponent {
+            return "Loaded model named " + model
+        }
+        
+        return "Load something to begin"
     }
+    
     
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text(inputFolder?.lastPathComponent ?? "Hello, world!")
+            Text(title)
+                .font(.title)
             HStack {
                 FolderSelector(inputFolder: $inputFolder,caption: "Choose image folder", canChooseDirectories: true)
                 Button("Create model") {
                     converter.run(inputFolderPath: inputFolder!)
                 }.disabled(inputFolder==nil)
                 Spacer()
-                FolderSelector(completion: { url in converter.computedModelURL = url }, inputFolder: $loadedModel, caption: "Load existing model", canChooseDirectories: false)
+                FolderSelector(completion: { url in
+                    converter.computedModelURL = url
+                    inputFolder = nil
+                }, inputFolder: $inputFolder, caption: "Load existing model", canChooseDirectories: false)
             }
             HStack {
                 ProgressView(value: converter.progress)
