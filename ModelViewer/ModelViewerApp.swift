@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct ModelViewerApp: App {
+    var converter = Photogrammetry()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(existingModel: converter.computedModelURL)
+                .environmentObject(converter)
+            
         }
     }
 }
