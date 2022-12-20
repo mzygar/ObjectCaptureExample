@@ -38,7 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6E4BC2BE294A03770071D910 /* ModelViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModelViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E4BC2BE294A03770071D910 /* ObjectCaptureExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectCaptureExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E4BC2C1294A03770071D910 /* ModelViewerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewerApp.swift; sourceTree = "<group>"; };
 		6E4BC2C3294A03770071D910 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6E4BC2C5294A03780071D910 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,7 +93,7 @@
 		6E4BC2BF294A03770071D910 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6E4BC2BE294A03770071D910 /* ModelViewer.app */,
+				6E4BC2BE294A03770071D910 /* ObjectCaptureExample.app */,
 				6E4BC2CF294A03780071D910 /* ModelViewerTests.xctest */,
 				6E4BC2D9294A03780071D910 /* ModelViewerUITests.xctest */,
 			);
@@ -144,9 +144,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6E4BC2BD294A03770071D910 /* ModelViewer */ = {
+		6E4BC2BD294A03770071D910 /* ObjectCaptureExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6E4BC2E3294A03780071D910 /* Build configuration list for PBXNativeTarget "ModelViewer" */;
+			buildConfigurationList = 6E4BC2E3294A03780071D910 /* Build configuration list for PBXNativeTarget "ObjectCaptureExample" */;
 			buildPhases = (
 				6E4BC2BA294A03770071D910 /* Sources */,
 				6E4BC2BB294A03770071D910 /* Frameworks */,
@@ -156,9 +156,9 @@
 			);
 			dependencies = (
 			);
-			name = ModelViewer;
+			name = ObjectCaptureExample;
 			productName = ModelViewer;
-			productReference = 6E4BC2BE294A03770071D910 /* ModelViewer.app */;
+			productReference = 6E4BC2BE294A03770071D910 /* ObjectCaptureExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6E4BC2CE294A03780071D910 /* ModelViewerTests */ = {
@@ -220,7 +220,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6E4BC2B9294A03770071D910 /* Build configuration list for PBXProject "ModelViewer" */;
+			buildConfigurationList = 6E4BC2B9294A03770071D910 /* Build configuration list for PBXProject "ObjectCaptureExample" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -233,7 +233,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6E4BC2BD294A03770071D910 /* ModelViewer */,
+				6E4BC2BD294A03770071D910 /* ObjectCaptureExample */,
 				6E4BC2CE294A03780071D910 /* ModelViewerTests */,
 				6E4BC2D8294A03780071D910 /* ModelViewerUITests */,
 			);
@@ -302,12 +302,12 @@
 /* Begin PBXTargetDependency section */
 		6E4BC2D1294A03780071D910 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6E4BC2BD294A03770071D910 /* ModelViewer */;
+			target = 6E4BC2BD294A03770071D910 /* ObjectCaptureExample */;
 			targetProxy = 6E4BC2D0294A03780071D910 /* PBXContainerItemProxy */;
 		};
 		6E4BC2DB294A03780071D910 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6E4BC2BD294A03770071D910 /* ModelViewer */;
+			target = 6E4BC2BD294A03770071D910 /* ObjectCaptureExample */;
 			targetProxy = 6E4BC2DA294A03780071D910 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -547,7 +547,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6E4BC2B9294A03770071D910 /* Build configuration list for PBXProject "ModelViewer" */ = {
+		6E4BC2B9294A03770071D910 /* Build configuration list for PBXProject "ObjectCaptureExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6E4BC2E1294A03780071D910 /* Debug */,
@@ -556,7 +556,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E4BC2E3294A03780071D910 /* Build configuration list for PBXNativeTarget "ModelViewer" */ = {
+		6E4BC2E3294A03780071D910 /* Build configuration list for PBXNativeTarget "ObjectCaptureExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6E4BC2E4294A03780071D910 /* Debug */,

@@ -1,7 +1,6 @@
 //
 //  Photogrammetry.swift
-//  ModelViewer
-//
+//  Based on the HelloPhotogrammetry demo app from WWDC 2021
 //  Created by Michal Zygar on 14/12/2022.
 //
 
@@ -10,8 +9,8 @@ import os
 import RealityKit
 import AppKit
 
-private let logger = Logger(subsystem: "com.mzygar.modelviewer",
-                            category: "Model viewer")
+private let logger = Logger(subsystem: "com.mzygar.objectcaptureexample",
+                            category: "Object Capture App")
 
 class Photogrammetry: ObservableObject {
     var inputFolder: String? = nil
@@ -95,7 +94,7 @@ class Photogrammetry: ObservableObject {
                 try session.process(requests: [ request ])
             } catch {
                 logger.critical("Process got error: \(String(describing: error))")
-    //            Foundation.exit(1)
+
             }
         }
     }
@@ -160,11 +159,6 @@ class Photogrammetry: ObservableObject {
 }
 //
 //// MARK: - Helper Functions / Extensions
-//
-//private func handleRequestProgress(request: PhotogrammetrySession.Request,
-//                           fractionComplete: Double) {
-//print("Progress(request = \(String(describing: request)) = \(fractionComplete)")
-//}
 
 /// Error thrown when an illegal option is specified.
 private enum IllegalOption: Swift.Error {
