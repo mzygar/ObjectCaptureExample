@@ -11,31 +11,11 @@
 		6E4BC2C4294A03770071D910 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4BC2C3294A03770071D910 /* ContentView.swift */; };
 		6E4BC2C6294A03780071D910 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E4BC2C5294A03780071D910 /* Assets.xcassets */; };
 		6E4BC2C9294A03780071D910 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E4BC2C8294A03780071D910 /* Preview Assets.xcassets */; };
-		6E4BC2D4294A03780071D910 /* ModelViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4BC2D3294A03780071D910 /* ModelViewerTests.swift */; };
-		6E4BC2DE294A03780071D910 /* ModelViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4BC2DD294A03780071D910 /* ModelViewerUITests.swift */; };
-		6E4BC2E0294A03780071D910 /* ModelViewerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4BC2DF294A03780071D910 /* ModelViewerUITestsLaunchTests.swift */; };
 		6E4BC2ED294A038C0071D910 /* FolderSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4BC2EC294A038C0071D910 /* FolderSelector.swift */; };
 		6E4BC2EF294A06290071D910 /* island.usda in Resources */ = {isa = PBXBuildFile; fileRef = 6E4BC2EE294A05420071D910 /* island.usda */; };
 		6E4BC2F1294A07800071D910 /* Photogrammetry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4BC2F0294A07800071D910 /* Photogrammetry.swift */; };
 		6E4BC2F3294A0F380071D910 /* kostka3d.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 6E4BC2F2294A0F380071D910 /* kostka3d.usdz */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		6E4BC2D0294A03780071D910 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E4BC2B6294A03770071D910 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6E4BC2BD294A03770071D910;
-			remoteInfo = ModelViewer;
-		};
-		6E4BC2DA294A03780071D910 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E4BC2B6294A03770071D910 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6E4BC2BD294A03770071D910;
-			remoteInfo = ModelViewer;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6E4BC2BE294A03770071D910 /* ObjectCaptureExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectCaptureExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,11 +24,6 @@
 		6E4BC2C5294A03780071D910 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E4BC2C8294A03780071D910 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6E4BC2CA294A03780071D910 /* ModelViewer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ModelViewer.entitlements; sourceTree = "<group>"; };
-		6E4BC2CF294A03780071D910 /* ModelViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModelViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E4BC2D3294A03780071D910 /* ModelViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewerTests.swift; sourceTree = "<group>"; };
-		6E4BC2D9294A03780071D910 /* ModelViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModelViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E4BC2DD294A03780071D910 /* ModelViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewerUITests.swift; sourceTree = "<group>"; };
-		6E4BC2DF294A03780071D910 /* ModelViewerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6E4BC2EC294A038C0071D910 /* FolderSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderSelector.swift; sourceTree = "<group>"; };
 		6E4BC2EE294A05420071D910 /* island.usda */ = {isa = PBXFileReference; lastKnownFileType = text; path = island.usda; sourceTree = "<group>"; };
 		6E4BC2F0294A07800071D910 /* Photogrammetry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photogrammetry.swift; sourceTree = "<group>"; };
@@ -63,20 +38,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6E4BC2CC294A03780071D910 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6E4BC2D6294A03780071D910 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -84,8 +45,6 @@
 			isa = PBXGroup;
 			children = (
 				6E4BC2C0294A03770071D910 /* ModelViewer */,
-				6E4BC2D2294A03780071D910 /* ModelViewerTests */,
-				6E4BC2DC294A03780071D910 /* ModelViewerUITests */,
 				6E4BC2BF294A03770071D910 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,8 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				6E4BC2BE294A03770071D910 /* ObjectCaptureExample.app */,
-				6E4BC2CF294A03780071D910 /* ModelViewerTests.xctest */,
-				6E4BC2D9294A03780071D910 /* ModelViewerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,23 +81,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		6E4BC2D2294A03780071D910 /* ModelViewerTests */ = {
-			isa = PBXGroup;
-			children = (
-				6E4BC2D3294A03780071D910 /* ModelViewerTests.swift */,
-			);
-			path = ModelViewerTests;
-			sourceTree = "<group>";
-		};
-		6E4BC2DC294A03780071D910 /* ModelViewerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				6E4BC2DD294A03780071D910 /* ModelViewerUITests.swift */,
-				6E4BC2DF294A03780071D910 /* ModelViewerUITestsLaunchTests.swift */,
-			);
-			path = ModelViewerUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,42 +101,6 @@
 			productReference = 6E4BC2BE294A03770071D910 /* ObjectCaptureExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6E4BC2CE294A03780071D910 /* ModelViewerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6E4BC2E6294A03780071D910 /* Build configuration list for PBXNativeTarget "ModelViewerTests" */;
-			buildPhases = (
-				6E4BC2CB294A03780071D910 /* Sources */,
-				6E4BC2CC294A03780071D910 /* Frameworks */,
-				6E4BC2CD294A03780071D910 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6E4BC2D1294A03780071D910 /* PBXTargetDependency */,
-			);
-			name = ModelViewerTests;
-			productName = ModelViewerTests;
-			productReference = 6E4BC2CF294A03780071D910 /* ModelViewerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		6E4BC2D8294A03780071D910 /* ModelViewerUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6E4BC2E9294A03780071D910 /* Build configuration list for PBXNativeTarget "ModelViewerUITests" */;
-			buildPhases = (
-				6E4BC2D5294A03780071D910 /* Sources */,
-				6E4BC2D6294A03780071D910 /* Frameworks */,
-				6E4BC2D7294A03780071D910 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6E4BC2DB294A03780071D910 /* PBXTargetDependency */,
-			);
-			name = ModelViewerUITests;
-			productName = ModelViewerUITests;
-			productReference = 6E4BC2D9294A03780071D910 /* ModelViewerUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -209,14 +113,6 @@
 				TargetAttributes = {
 					6E4BC2BD294A03770071D910 = {
 						CreatedOnToolsVersion = 14.1;
-					};
-					6E4BC2CE294A03780071D910 = {
-						CreatedOnToolsVersion = 14.1;
-						TestTargetID = 6E4BC2BD294A03770071D910;
-					};
-					6E4BC2D8294A03780071D910 = {
-						CreatedOnToolsVersion = 14.1;
-						TestTargetID = 6E4BC2BD294A03770071D910;
 					};
 				};
 			};
@@ -234,8 +130,6 @@
 			projectRoot = "";
 			targets = (
 				6E4BC2BD294A03770071D910 /* ObjectCaptureExample */,
-				6E4BC2CE294A03780071D910 /* ModelViewerTests */,
-				6E4BC2D8294A03780071D910 /* ModelViewerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -249,20 +143,6 @@
 				6E4BC2F3294A0F380071D910 /* kostka3d.usdz in Resources */,
 				6E4BC2C9294A03780071D910 /* Preview Assets.xcassets in Resources */,
 				6E4BC2C6294A03780071D910 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6E4BC2CD294A03780071D910 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6E4BC2D7294A03780071D910 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,37 +160,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6E4BC2CB294A03780071D910 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6E4BC2D4294A03780071D910 /* ModelViewerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6E4BC2D5294A03780071D910 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6E4BC2E0294A03780071D910 /* ModelViewerUITestsLaunchTests.swift in Sources */,
-				6E4BC2DE294A03780071D910 /* ModelViewerUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		6E4BC2D1294A03780071D910 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6E4BC2BD294A03770071D910 /* ObjectCaptureExample */;
-			targetProxy = 6E4BC2D0294A03780071D910 /* PBXContainerItemProxy */;
-		};
-		6E4BC2DB294A03780071D910 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6E4BC2BD294A03770071D910 /* ObjectCaptureExample */;
-			targetProxy = 6E4BC2DA294A03780071D910 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		6E4BC2E1294A03780071D910 /* Debug */ = {
@@ -476,74 +326,6 @@
 			};
 			name = Release;
 		};
-		6E4BC2E7294A03780071D910 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mzygar.ModelViewerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ModelViewer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ModelViewer";
-			};
-			name = Debug;
-		};
-		6E4BC2E8294A03780071D910 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mzygar.ModelViewerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ModelViewer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ModelViewer";
-			};
-			name = Release;
-		};
-		6E4BC2EA294A03780071D910 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mzygar.ModelViewerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = ModelViewer;
-			};
-			name = Debug;
-		};
-		6E4BC2EB294A03780071D910 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mzygar.ModelViewerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = ModelViewer;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -561,24 +343,6 @@
 			buildConfigurations = (
 				6E4BC2E4294A03780071D910 /* Debug */,
 				6E4BC2E5294A03780071D910 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6E4BC2E6294A03780071D910 /* Build configuration list for PBXNativeTarget "ModelViewerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6E4BC2E7294A03780071D910 /* Debug */,
-				6E4BC2E8294A03780071D910 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6E4BC2E9294A03780071D910 /* Build configuration list for PBXNativeTarget "ModelViewerUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6E4BC2EA294A03780071D910 /* Debug */,
-				6E4BC2EB294A03780071D910 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
